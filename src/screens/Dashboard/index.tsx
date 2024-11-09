@@ -12,6 +12,7 @@ import { NextDays } from '@components/NextDays';
 import { SelectList } from '@components/SelectList';
 import { WeatherToday } from '@components/WeatherToday';
 import { WeatherDetails } from '@components/WeatherDetails';
+import { removeStorageCity } from '@libs/asyncStorage/cityStorage';
 
 export function Dashboard() {
   const [search, setSearch] = useState('');
