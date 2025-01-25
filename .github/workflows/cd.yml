@@ -16,3 +16,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: steup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      
+      - name: steup expo
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          packager: npm
+          token: ${{ secrets.eas_expo_token_iweather }}
+      
+      - name: build expo
+        run: eas build --platform android --profile preview --non-interactive --no-wait
