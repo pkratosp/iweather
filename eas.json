@@ -1,0 +1,17 @@
+{
+  "cli": {
+    "version": ">= 14.5.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "49b2ba6d66975a91bc8d335c4383516e"
+      }
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  }
+}

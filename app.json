@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.pkratosp.iweather"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -33,6 +32,7 @@
       "eas": {
         "projectId": "4bef8cef-186c-4dee-a8d0-884f1391aeb9"
       }
-    }
+    },
+    "sdkVersion": "49.0.6"
   }
 }
