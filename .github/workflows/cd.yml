@@ -1,15 +1,12 @@
 name: CD
-
 on:
   push:
     branches:
       - main
-
 jobs:
-  CD:
-    name: Continuos Delivery
+  CD: 
+    name: Continuous Delivery
     runs-on: ubuntu-latest
-
-    setps:
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v3
