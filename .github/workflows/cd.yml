@@ -1,17 +1,14 @@
 name: CD
 
 on:
-  workflow_run: 
-    workflow: [CI]
-    types:
-      - completed
+  push:
+    branches:
+      - main
 
 jobs:
   CD:
     name: Continuos Delivery
     runs-on: ubuntu-latest
-
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     setps:
       - name: Checkout repository
