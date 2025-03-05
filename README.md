@@ -15,7 +15,7 @@ npm install
 Para iniciar o aplicativo deve rodar o comando
 
 ```sh
-npm start
+npm run start
 ```
 
 ## Ferramentas utilizadas
